@@ -1,6 +1,8 @@
 <template>
   <h1>${message}</h1>
-  <h4>${100 * audioBuffered.end(0) / audioDuration}% loaded</h4>
+  <div if.bind="audioBuffered.length">
+    <h4>${100 * audioBuffered.end(0) / audioDuration}% loaded</h4>
+  </div>  
   <audio src="assets/audio1.mp3" controls preload buffered.from-view="audioBuffered" duration.from-view="audioDuration"></audio>
   <p>Loaded: <span></span>%</p>
   <p>Played: <span></span>%</p>
