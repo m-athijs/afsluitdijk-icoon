@@ -1,8 +1,13 @@
 CACHE MANIFEST
-# 2017-10-13:v1
+# 2017-10-13:v4
 
 # Explicitly cached 'master entries'.
 CACHE:
 index.html
-scripts/vendor-bundle.js
 assets/audio1.mp3
+scripts/app-bundle.js
+scripts/app-bundle.js.map
+scripts/vendor-bundle.js
+
+NETWORK:
+*

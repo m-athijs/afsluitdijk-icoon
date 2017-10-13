@@ -1,11 +1,11 @@
 <template>
   <h1>${message}</h1>
-  <div if.bind="audioDuration - audioBuffered.end(0) == 0">
-    <h4>done loading</h4>
-  </div>
+  <div if.bind="audioBuffered.length">
+    <h4>${100 * audioBuffered.end(0) / audioDuration}% loaded</h4>
+    <h4>${audioDuration - audioBuffered.end(0)}</h4>
+  </div>  
   <audio src="assets/audio1.mp3" controls preload buffered.from-view="audioBuffered" duration.from-view="audioDuration"></audio>
   <p>Loaded: <span></span>%</p>
-  <p>Played: <span></span>%</p>
   <script type="text/javascript">
     alert(audio.duration);
       var audio = document.querySelector('audio');
