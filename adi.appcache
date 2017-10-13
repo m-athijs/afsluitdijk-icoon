@@ -3,10 +3,10 @@ CACHE MANIFEST
 
 # Explicitly cached 'master entries'.
 CACHE:
+adi.appcache
 index.html
 assets/audio1.mp3
 scripts/app-bundle.js
-scripts/app-bundle.js.map
 scripts/vendor-bundle.js
 
 NETWORK:
