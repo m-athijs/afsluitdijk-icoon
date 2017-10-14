@@ -72,7 +72,20 @@
             "main": "aurelia-testing",
             "env": "dev"
           },
-          "text"
+          "text",
+          "events",
+          "base64mime",
+          {
+            "name": "js-oop",
+            "path": "../node_modules/js-oop/dist",
+            "main": "Class"
+          },
+          {
+            "name": "preloader",
+            "path": "../node_modules/preloader/lib",
+            "main": "index",
+            "deps": ["base64mime","js-oop"]
+          }
         ]
       }
     ],
