@@ -10,8 +10,7 @@ export class App {
   }
 
   downloadAudio() {
-    if (!this.loaded) {
-      this.loader = preloader({
+    this.loader = preloader({
         xhrImages: false
       });
       this.loader.addAudio('../assets/audio1.mp3');
@@ -28,9 +27,5 @@ export class App {
         this.loaded = true;
         console.log('audio loaded');
       });
-    } else {
-      this.playaudio = true;
-    }
   }
-
 }
