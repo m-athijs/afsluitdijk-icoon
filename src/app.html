@@ -1,5 +1,6 @@
 <template>
-  <h1>${message}</h1>
-  <h4>${loaded}% loaded</h4>
-  <audio src="assets/audio1.mp3" controls></audio>
+  <button click.delegate="downloadAudio()">Download audio tour</button>
+  <p id="downloadProgress"></p>
+  <button click.delegate="startAudio()">Stream audio tour</button>
+  <audio src="assets/audio1.mp3" autoplay.bind="playaudio"></audio>
 </template>
