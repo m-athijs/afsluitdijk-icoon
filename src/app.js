@@ -17,7 +17,7 @@ export class App {
     this.loader.load();
     this.loader.on('progress', function(progress) {
       console.log(progress);
-      document.getElementById('downloadProgress').innerHTML = Math.ceil(progress * 100) + '%';
+      document.getElementById('downloadProgress').innerHTML = ' ' + Math.ceil(progress * 100) + '%';
     });
     this.loader.on('complete', function() {
       this.loaded = 'done';

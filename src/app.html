@@ -1,6 +1,14 @@
 <template>
-  <button click.delegate="downloadAudio()">Download audio tour</button>
-  <p id="downloadProgress"></p>
-  <button click.delegate="startAudio()">Stream audio tour</button>
-  <audio src="assets/audio1.mp3" autoplay.bind="playaudio"></audio>
+  <div>
+    <require from="bootstrap/css/bootstrap.css"></require>
+    <require from="./css/styles.css"></require>
+    <div class="col-md-2">
+      <a id="downloadButton" href="#" click.delegate="downloadAudio()">DOWNLOAD AUDIO TOUR</a>
+      <span id="downloadProgress"></span>
+    </div>
+    <div class="col-md-2">
+      <a href="#" click.delegate="startAudio()">STREAM AUDIO TOUR</a>
+    </div>
+    <audio src="assets/audio1.mp3" autoplay.bind="playaudio"></audio>
+  </div>
 </template>

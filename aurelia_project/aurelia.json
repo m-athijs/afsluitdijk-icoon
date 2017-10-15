@@ -84,7 +84,23 @@
             "name": "preloader",
             "path": "../node_modules/preloader/lib",
             "main": "index",
-            "deps": ["base64mime","js-oop"]
+            "deps": [
+              "base64mime",
+              "js-oop"
+            ]
+          },
+          "jquery",
+          {
+            "name": "bootstrap",
+            "path": "../node_modules/bootstrap/dist",
+            "main": "js/bootstrap.min.js",
+            "deps": [
+              "jquery"
+            ],
+            "exports": "$",
+            "resources": [
+              "css/bootstrap.css"
+            ]
           }
         ]
       }
