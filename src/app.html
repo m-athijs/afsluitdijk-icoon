@@ -5,9 +5,10 @@
     <div class="col-md-2">
       <a id="downloadButton" href="#" click.delegate="downloadAudio()">DOWNLOAD AUDIO TOUR</a>
       <span id="downloadProgress"></span>
+      <a id="playButton" href="#" click.delegate="startAudio()" style="display: none">PLAY AUDIO TOUR</a>
     </div>
     <div class="col-md-2">
-      <a href="#" click.delegate="startAudio()">STREAM AUDIO TOUR</a>
+      <a id="streamButton" href="#" click.delegate="startAudio()">STREAM AUDIO TOUR</a>
     </div>
     <audio src="assets/audio1.mp3" autoplay.bind="playaudio"></audio>
   </div>
