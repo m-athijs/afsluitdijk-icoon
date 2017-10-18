@@ -2,7 +2,8 @@ import preloader from 'preloader';
 
 export class App {
   startAudio() {
-    this.playaudio = true;
+    //this.playaudio = true;
+    document.getElementById('audiofile').play();
   }
   downloadAudio() {
     this.loader = preloader({
