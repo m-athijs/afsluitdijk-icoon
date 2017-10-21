@@ -1,11 +1,12 @@
 CACHE MANIFEST
-# 2017-10-18:v1
+# 2017-10-21:v1
 
 # Explicitly cached 'master entries'.
 CACHE:
 adi.appcache
 index.html
 assets/audio1.mp3
+assets/audio2.mp3
 scripts/app-bundle.js
 scripts/vendor-bundle.js
 

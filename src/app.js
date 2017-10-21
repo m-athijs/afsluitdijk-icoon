@@ -2,14 +2,13 @@ import preloader from 'preloader';
 
 export class App {
   startAudio() {
-    //this.playaudio = true;
     document.getElementById('audiofile').play();
   }
   downloadAudio() {
     this.loader = preloader({
       xhrImages: false
     });
-    this.loader.addAudio('../assets/audio1.mp3');
+    this.loader.addAudio('../assets/audio2.mp3');
     this.loader.load();
     this.loader.on('progress', function(progress) {
       console.log(progress);
