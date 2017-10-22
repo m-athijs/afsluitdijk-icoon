@@ -1,6 +1,7 @@
 import preloader from 'preloader';
 
 export class App {
+
   startAudio() {
     document.getElementById('audiofile').play();
   }

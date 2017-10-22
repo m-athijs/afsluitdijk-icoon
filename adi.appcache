@@ -1,14 +1,16 @@
 CACHE MANIFEST
-# 2017-10-21:v1
+# 2017-10-22:v17
 
 # Explicitly cached 'master entries'.
 CACHE:
-adi.appcache
 index.html
+favicon.ico
 assets/audio1.mp3
 assets/audio2.mp3
 scripts/app-bundle.js
 scripts/vendor-bundle.js
+Sr4SZjJG2shlLRwOkNqcEoX0hVgzZQUfRDuZrPvH3D8.woff2
+QnguTd82yEUxQZygH2gm8JBw1xU1rKptJj_0jans920.woff2
 
 NETWORK:
 *
