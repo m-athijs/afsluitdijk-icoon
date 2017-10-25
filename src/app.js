@@ -8,10 +8,13 @@ export class App {
       alert(e.target);
     }
 
-    this.showPlayButton = PLATFORM.global.applicationCache.status === 1;
-    // this.cacheUpdateReady = e => {
-    //   alert(e.target);
-    // }
+    this.cacheUpdateReady = _ => {
+      alert('ready');
+      this.showPlayButton = true;
+    }
+
+    this.showPlayButton = PLATFORM.global.applicationCache.status === 1 || PLATFORM.global.applicationCache.status === 4;
+    this.textvalue = PLATFORM.global.applicationCache.status;
   }
 
   startAudio() {
@@ -39,13 +42,21 @@ export class App {
   }
 
   attached() {
-
+    //this.showPlayButton = PLATFORM.global.applicationCache.status === 1;
+    
     // if (PLATFORM.global.applicationCache.status === 1) {
     //   this.showPlayButton = true;
     // }
-    document.addEventListener('click', this.handleBodyClick);
-    //window.applicationCache.addEventListener('updateready', this.cacheUpdateReady, false);
+    document.addEventListener('click', function(e) {
+      alert('click');
+    });
+    PLATFORM.global.applicationCache.addEventListener('cached', function(e) {
+      alert('cached');
+    }, false);
 
+    PLATFORM.global.applicationCache.addEventListener('NoUpdate', function(e) {
+      alert('noupdate');
+    }, false);
     //alert(this.DOM.getElementById('playButton'));
     // this.DOM.applicationCache.addEventListener('updateready', function() {
     //   this.DOM.applicationCache.swapCache();
