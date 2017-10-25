@@ -51,23 +51,43 @@ export class App {
       // alert('click');
     });
     PLATFORM.global.applicationCache.addEventListener('cached', function(e) {
-      // alert('cached');
+      console.log('*** cached ***');
       location.reload();
     }, false);
 
     PLATFORM.global.applicationCache.addEventListener('noupdate', function(e) {
-      // alert('noupdate');
+      console.log('*** noupdate ***');
       location.reload();
     }, false);
 
     PLATFORM.global.applicationCache.addEventListener('updateready', function(e) {
-      // alert('updateready');
+      console.log('*** updateready ***');
       location.reload();
     }, false);
-    //alert(this.DOM.getElementById('playButton'));
-    // this.DOM.applicationCache.addEventListener('updateready', function() {
-    //   this.DOM.applicationCache.swapCache();
-    //   alert(updateReady);
-    // }, false);         
+
+    PLATFORM.global.applicationCache.addEventListener('checking', function(e) {
+      console.log('*** checking ***');
+      location.reload();
+    }, false);
+
+    PLATFORM.global.applicationCache.addEventListener('downloading', function(e) {
+      console.log('*** downloading ***');
+      location.reload();
+    }, false);
+
+    PLATFORM.global.applicationCache.addEventListener('error', function(e) {
+      console.log('*** error ***');
+      location.reload();
+    }, false);
+
+    PLATFORM.global.applicationCache.addEventListener('obsolete', function(e) {
+      console.log('*** obsolete ***');
+      location.reload();
+    }, false);
+
+    PLATFORM.global.applicationCache.addEventListener('progress', function(e) {
+      console.log('*** progress ***');
+      location.reload();
+    }, false);
   }
 }
