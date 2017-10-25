@@ -53,7 +53,7 @@ export class App {
     PLATFORM.global.applicationCache.addEventListener('cached', function(e) {
       alert('cached');
       this.showPlayButton = true;
-      location.reload();
+      //location.reload();
     }, false);
 
     PLATFORM.global.applicationCache.addEventListener('noupdate', function(e) {
