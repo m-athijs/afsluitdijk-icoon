@@ -67,27 +67,22 @@ export class App {
 
     PLATFORM.global.applicationCache.addEventListener('checking', function(e) {
       console.log('*** checking ***');
-      location.reload();
     }, false);
 
     PLATFORM.global.applicationCache.addEventListener('downloading', function(e) {
       console.log('*** downloading ***');
-      location.reload();
     }, false);
 
     PLATFORM.global.applicationCache.addEventListener('error', function(e) {
       console.log('*** error ***');
-      location.reload();
     }, false);
 
     PLATFORM.global.applicationCache.addEventListener('obsolete', function(e) {
       console.log('*** obsolete ***');
-      location.reload();
     }, false);
 
     PLATFORM.global.applicationCache.addEventListener('progress', function(e) {
       console.log('*** progress ***');
-      location.reload();
     }, false);
   }
 }
