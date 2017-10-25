@@ -52,10 +52,12 @@ export class App {
     });
     PLATFORM.global.applicationCache.addEventListener('cached', function(e) {
       alert('cached');
+      this.showPlayButton = true;
     }, false);
 
-    PLATFORM.global.applicationCache.addEventListener('NoUpdate', function(e) {
+    PLATFORM.global.applicationCache.addEventListener('noupdate', function(e) {
       alert('noupdate');
+      this.showPlayButton = true;
     }, false);
     //alert(this.DOM.getElementById('playButton'));
     // this.DOM.applicationCache.addEventListener('updateready', function() {
