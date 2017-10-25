@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2017-10-22:v17
+# 2017-10-25:v84
 
 # Explicitly cached 'master entries'.
 CACHE:
@@ -7,6 +7,11 @@ index.html
 favicon.ico
 assets/audio1.mp3
 assets/audio2.mp3
+assets/pinkfloyd1.mp3
+assets/pinkfloyd2.mp3
+assets/pinkfloyd3.mp3
+assets/pinkfloyd4.mp3
+assets/pinkfloyd5.mp3
 scripts/app-bundle.js
 scripts/vendor-bundle.js
 Sr4SZjJG2shlLRwOkNqcEoX0hVgzZQUfRDuZrPvH3D8.woff2
