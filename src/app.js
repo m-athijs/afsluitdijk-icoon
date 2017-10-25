@@ -13,7 +13,7 @@ export class App {
       this.showPlayButton = true;
     }
 
-    //this.showPlayButton = PLATFORM.global.applicationCache.status === 1 || PLATFORM.global.applicationCache.status === 4;
+    this.showPlayButton = PLATFORM.global.applicationCache.status === 1 || PLATFORM.global.applicationCache.status === 4;
     this.textvalue = PLATFORM.global.applicationCache.status;
   }
 
