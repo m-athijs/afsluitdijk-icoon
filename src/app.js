@@ -48,20 +48,20 @@ export class App {
     //   this.showPlayButton = true;
     // }
     document.addEventListener('click', function(e) {
-      alert('click');
+      // alert('click');
     });
     PLATFORM.global.applicationCache.addEventListener('cached', function(e) {
-      alert('cached');
+      // alert('cached');
       location.reload();
     }, false);
 
     PLATFORM.global.applicationCache.addEventListener('noupdate', function(e) {
-      alert('noupdate');
+      // alert('noupdate');
       location.reload();
     }, false);
 
     PLATFORM.global.applicationCache.addEventListener('updateready', function(e) {
-      alert('updateready');
+      // alert('updateready');
       location.reload();
     }, false);
     //alert(this.DOM.getElementById('playButton'));
