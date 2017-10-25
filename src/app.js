@@ -8,7 +8,7 @@ export class App {
       alert(e.target);
     }
 
-    this.showPlayButton = false;
+    this.showPlayButton = PLATFORM.global.applicationCache.status === 1;
     // this.cacheUpdateReady = e => {
     //   alert(e.target);
     // }
@@ -40,9 +40,9 @@ export class App {
 
   attached() {
 
-    if (PLATFORM.global.applicationCache.status === 1) {
-      this.showPlayButton = true;
-    }
+    // if (PLATFORM.global.applicationCache.status === 1) {
+    //   this.showPlayButton = true;
+    // }
     document.addEventListener('click', this.handleBodyClick);
     //window.applicationCache.addEventListener('updateready', this.cacheUpdateReady, false);
 
